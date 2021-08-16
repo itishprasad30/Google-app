@@ -16,7 +16,7 @@ function CarList({ cars }) {
       <h1 className="ml-5 justify-center items-center mt-5">
         cars name u enterd: {id}
       </h1>
-      <img src={cars.image} width="720 px" />
+      {/* <img src={cars.image} width="720 px" /> */}
     </div>
   );
 }
