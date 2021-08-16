@@ -1,0 +1,31 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply hover:underline cursor-pointer;
+  }
+  .btn {
+    @apply bg-[#f8f9fa];
+    @apply p-3;
+    @apply rounded-md;
+    @apply ring-gray-200;
+    @apply text-sm;
+    @apply text-gray-800;
+  }
+
+  .btn:hover {
+    @apply ring-1;
+    @apply shadow-md;
+  }
+
+  .btn:focus {
+    @apply outline-none;
+  }
+
+  .btn:active {
+    @apply ring-gray-300;
+  }
+}
