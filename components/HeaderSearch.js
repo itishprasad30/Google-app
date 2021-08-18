@@ -14,6 +14,7 @@ import HeaderOption from "./HeaderOptions";
 const HeaderSearch = () => {
   const router = useRouter();
   const searchInputRef = useRef(null);
+  const previousTerm = router.query.term;
 
   const search = (e) => {
     e.preventDefault();
@@ -35,6 +36,7 @@ const HeaderSearch = () => {
           <input
             ref={searchInputRef}
             type="text"
+            defaultValue={previousTerm}
             className=" flex-grow w-full focus:outline-none"
           />
           <XIcon
