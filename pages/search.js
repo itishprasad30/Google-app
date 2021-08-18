@@ -18,7 +18,10 @@ function Search({ results }) {
     <div>
       <Head>
         <title>{router.query.term} -Google Search</title>
-        <link rel="Icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Overpass+Mono:wght@300&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       {/* Header */}
       <HeaderSearch />
